@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GameplayKit
 
 class ViewController: UIViewController {
 
@@ -19,7 +20,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func startGameButtonTapped(_ sender : UIButton) {
+        let game = NumberTileGameViewController(dimension: 4, threshold: 2048)
+        self.present(game, animated: true, completion: nil)
+    }
 
 }
 

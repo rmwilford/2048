@@ -12,6 +12,13 @@
 		3FAF05E920F908230003FA2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAF05E720F908230003FA2F /* Main.storyboard */; };
 		3FAF05EB20F9082A0003FA2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAF05EA20F9082A0003FA2F /* Assets.xcassets */; };
 		3FAF05EE20F9082A0003FA2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAF05EC20F9082A0003FA2F /* LaunchScreen.storyboard */; };
+		3FAF05F620F90B920003FA2F /* AppearanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF05F520F90B920003FA2F /* AppearanceProvider.swift */; };
+		3FAF05F820F90C0C0003FA2F /* NumberTileGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF05F720F90C0C0003FA2F /* NumberTileGame.swift */; };
+		3FAF05FA20F90DDD0003FA2F /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF05F920F90DDD0003FA2F /* GameModel.swift */; };
+		3FAF05FC20F90E4F0003FA2F /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF05FB20F90E4F0003FA2F /* AuxiliaryModels.swift */; };
+		3FAF05FE20F90E940003FA2F /* AccessoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF05FD20F90E940003FA2F /* AccessoryViews.swift */; };
+		3FAF060020F90EA50003FA2F /* GameboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF05FF20F90EA50003FA2F /* GameboardView.swift */; };
+		3FAF060220F90EB00003FA2F /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF060120F90EB00003FA2F /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		3FAF05EA20F9082A0003FA2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FAF05ED20F9082A0003FA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FAF05EF20F9082A0003FA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FAF05F520F90B920003FA2F /* AppearanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceProvider.swift; sourceTree = "<group>"; };
+		3FAF05F720F90C0C0003FA2F /* NumberTileGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTileGame.swift; sourceTree = "<group>"; };
+		3FAF05F920F90DDD0003FA2F /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		3FAF05FB20F90E4F0003FA2F /* AuxiliaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliaryModels.swift; sourceTree = "<group>"; };
+		3FAF05FD20F90E940003FA2F /* AccessoryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryViews.swift; sourceTree = "<group>"; };
+		3FAF05FF20F90EA50003FA2F /* GameboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardView.swift; sourceTree = "<group>"; };
+		3FAF060120F90EB00003FA2F /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +70,35 @@
 			children = (
 				3FAF05E320F908230003FA2F /* AppDelegate.swift */,
 				3FAF05E520F908230003FA2F /* ViewController.swift */,
+				3FAF05F520F90B920003FA2F /* AppearanceProvider.swift */,
+				3FAF05F720F90C0C0003FA2F /* NumberTileGame.swift */,
 				3FAF05E720F908230003FA2F /* Main.storyboard */,
+				3FAF060520F90F9B0003FA2F /* Models */,
+				3FAF060320F90F840003FA2F /* Views */,
 				3FAF05EA20F9082A0003FA2F /* Assets.xcassets */,
 				3FAF05EC20F9082A0003FA2F /* LaunchScreen.storyboard */,
 				3FAF05EF20F9082A0003FA2F /* Info.plist */,
 			);
 			path = "2048 Norm";
+			sourceTree = "<group>";
+		};
+		3FAF060320F90F840003FA2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FAF05FD20F90E940003FA2F /* AccessoryViews.swift */,
+				3FAF05FF20F90EA50003FA2F /* GameboardView.swift */,
+				3FAF060120F90EB00003FA2F /* TileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3FAF060520F90F9B0003FA2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FAF05F920F90DDD0003FA2F /* GameModel.swift */,
+				3FAF05FB20F90E4F0003FA2F /* AuxiliaryModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAF05FA20F90DDD0003FA2F /* GameModel.swift in Sources */,
+				3FAF05F820F90C0C0003FA2F /* NumberTileGame.swift in Sources */,
 				3FAF05E620F908230003FA2F /* ViewController.swift in Sources */,
+				3FAF060020F90EA50003FA2F /* GameboardView.swift in Sources */,
+				3FAF060220F90EB00003FA2F /* TileView.swift in Sources */,
 				3FAF05E420F908230003FA2F /* AppDelegate.swift in Sources */,
+				3FAF05FE20F90E940003FA2F /* AccessoryViews.swift in Sources */,
+				3FAF05FC20F90E4F0003FA2F /* AuxiliaryModels.swift in Sources */,
+				3FAF05F620F90B920003FA2F /* AppearanceProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
